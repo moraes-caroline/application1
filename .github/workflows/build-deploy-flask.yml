@@ -4,6 +4,10 @@ on:
   push:
     branches: [ "main" ]
 
+permissions:
+  id-token: write  
+  contents: read
+
 env:
   AWS_REGION: sa-east-1
   ECR_REPO: 524558748007.dkr.ecr.sa-east-1.amazonaws.com/flask-app
